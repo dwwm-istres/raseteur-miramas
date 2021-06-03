@@ -32,7 +32,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Accueil
+                            <a class="nav-link" href="{{route('Home')}}">Accueil
                                 <!--<span class="lg-only">(current)</span>-->
                              </a>
                         </li>
