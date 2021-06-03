@@ -6,3 +6,4 @@ pour crée un model et sa table db: php artisan make:model Nom_fichier -m // -m 
 la commande php artisan migrate envoie les info au mysql et si ce n'est pas cree il le cree comme dans pdo
 un seeder c'est une class qui s'occupe de tester les données
 la commande : php artisan db:seed --class=UserSeeder appel une classe nomé à se recharger
+dd = die and dump permet de vider la varible
