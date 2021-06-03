@@ -1,0 +1,8 @@
+Commande poure faire un routing: php artisan serve
+pour ecrire un lien: {{asset('nom du repertoire/mon dossier')}}
+controller : même fonction que les partiel dans poo
+rendre un titre dynamique en faisant {{$title ?? ''}}, puis se rendre dans route apres mon mes parametre ->withTitle('mon titre')
+pour crée un model et sa table db: php artisan make:model Nom_fichier -m // -m cree aussi la class ou seront appeler mes champs sql
+la commande php artisan migrate envoie les info au mysql et si ce n'est pas cree il le cree comme dans pdo
+un seeder c'est une class qui s'occupe de tester les données
+la commande : php artisan db:seed --class=UserSeeder appel une classe nomé à se recharger
