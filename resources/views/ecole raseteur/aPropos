@@ -1,4 +1,0 @@
-@Extends('layouts/app')
-@section('content)
-
-@end
