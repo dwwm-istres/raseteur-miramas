@@ -19,10 +19,10 @@ use App\Http\Controllers\HomeController;
 
 // Ecriture conventionnel avec controller
 
-Route::get('home',[HomeController::class,"Home"])->name('Home');
-Route::get('ecole',[EcoleController::class,"Ecole"])->name('Ecole');
-Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
-Route::get('evenement',[EvenementController::class,"Evenement"])->name('Evenement');
+Route::get('home', [HomeController::class, "Home"])->name('Home');
+Route::get('ecole', [EcoleController::class, "Ecole"])->name('Ecole');
+Route::get('products', [ProductsController::class, "Products"])->name('Boutique');
+Route::get('evenement', [EvenementController::class, "Evenement"])->name('Evenement');
 // Route::get('',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
@@ -30,9 +30,7 @@ Route::get('evenement',[EvenementController::class,"Evenement"])->name('Evenemen
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-// Route::get('/',function (){
-//     return view('home')->with('title',"raseteur-miramas");
-//  });
+Route::get('/', function () {
+  return view('home')->with('title', "raseteur-miramas");
+});
 Auth::routes();
-
-
