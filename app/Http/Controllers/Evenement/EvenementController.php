@@ -9,6 +9,6 @@ class EvenementController extends Controller
 {
     //
 public function Evenement(){
-    return view('evenement\Evenement'); 
+    return view('evenement/Evenement'); 
 }
 }

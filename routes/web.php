@@ -30,9 +30,9 @@ Route::get('evenement',[EvenementController::class,"Evenement"])->name('Evenemen
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-// Route::get('/',function (){
-//     return view('home')->with('title',"raseteur-miramas");
-//  });
+Route::get('/',function (){
+    return view('home')->with('title',"raseteur-miramas");
+ });
 Auth::routes();
 
 
