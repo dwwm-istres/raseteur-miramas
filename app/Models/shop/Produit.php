@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\shop;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-// use Database\Seeders\Shop\ProduitsTableSeeder;
+use Database\Seeders\Shop\ProduitsTableSeeder;
 
 class Produit extends Model
 {

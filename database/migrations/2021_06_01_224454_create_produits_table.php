@@ -16,10 +16,10 @@ class CreateProduitsTable extends Migration
         Schema::create('produits', function (Blueprint $table) {
             $table->id();
             $table->timestamps(); 
-            $table->string(column: "nom_Produit");
-            $table->text(column: "description_produit");
-            $table->float(column: "prix_ht");
-            $table->string(column: "photo_produit");
+            $table->string("nom_Produit");
+            $table->text("description_produit");
+            $table->float("prix_ht");
+            $table->string("photo_produit");
         });
     }
     // timestamps sert a dire quand l'article a ete cree 
