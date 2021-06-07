@@ -132,8 +132,8 @@
               <div class="col-md-5 col-12">
                 <!-- Email input -->
                 <div class="form-outline form-dark mb-4">
-                  <label class="form-label" for="form5Example2 mt-2">addresse E-mail</label>
-                  <input type="email" id="form5Example2 " class="form-control" />
+                  <label class="form-label" for="email_NL mt-2">addresse E-mail</label>
+                  <input type="email" id="email_NL" class="form-control" />
 
                 </div>
               </div>
