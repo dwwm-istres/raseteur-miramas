@@ -60,6 +60,33 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="adress" class="col-md-4 col-form-label text-md-right">{{ __('Adresse') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="adress" type="text" class="form-control"  name="adress" value="{{ old('adress') }}" required autocomplete="adress">
+
+                                {{-- @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror --}}
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="adress" class="col-md-4 col-form-label text-md-right">{{ __('code postale') }}</label>
+
+                            <div class="col-md-4">
+                                <input id="zipCode" type="text" class="form-control"  name="ZipCode" value="{{ old('zipCode') }}" required autocomplete="ZipCode">
+
+                                {{-- @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror --}}
+                            </div>
+                        </div>
+
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
