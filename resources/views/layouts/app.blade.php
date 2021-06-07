@@ -107,9 +107,11 @@
       </div>
     </nav>
 
-    <main class="py-4">
+    <div class="container bg-white">
       @yield('content')
-    </main>
+    </div>
+
+
     <footer class="bg-light text-center text-white">
       <!-- Grid container -->
       <div class="p-4 pb-0">
@@ -160,6 +162,7 @@
       </div>
       <!-- Copyright -->
     </footer>
+
   </div>
   <script src="{{asset('js/carousel.js')}}"></script>
   <script src="{{asset('js/bundle.js')}}"></script>
