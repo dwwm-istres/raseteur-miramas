@@ -24,7 +24,7 @@ class ProductsTableSeeder extends Seeder
 
         $produit = new Produit();
         $produit -> nom_Produit = "Mug coucher de soleil";
-        $produit -> description_produit = " ";
+        $produit -> description_produit = "mug en ivoire ";
         $produit -> prix_ht = 8.5;
         $produit -> photo_produit ="téléchargement (1).jpg";
         $produit -> save();
