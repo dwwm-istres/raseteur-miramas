@@ -36,8 +36,16 @@
                                 <!--<span class="lg-only">(current)</span>-->
                              </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('Ecole')}}">Ecole Raseteur</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="ecole" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ecole Raseteur
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="ecole">
+                            <a class="dropdown-item" href="{{route('Apropos')}}">Qu'es ce que la course camarguaise?</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#">Articles</a>

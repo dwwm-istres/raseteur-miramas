@@ -4,8 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Shop\ProductsController;
 use App\Http\Controllers\Evenement\EvenementController;
 use App\Http\Controllers\HomeController;
-
-
+use App\Http\Controllers\Ecole_raseteur\AproposController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +22,7 @@ Route::get('home',[HomeController::class,"Home"])->name('Home');
 Route::get('ecole',[EcoleController::class,"Ecole"])->name('Ecole');
 Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
 Route::get('evenement',[EvenementController::class,"Evenement"])->name('Evenement');
+Route::get('aPropos',[AproposController::class,"Apropos"])->name('Apropos');
 // Route::get('',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
