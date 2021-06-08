@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 
 class AproposController extends Controller { 
    public function Apropos() {
-      return view('ecole raseteur/aPropos');
+      return view('ecole_raseteur/apropos');
    } 
 }

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Shop\ProductsController;
 use App\Http\Controllers\Evenement\EvenementController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Ecole_raseteur\AproposController;
 
 
 /*
@@ -20,7 +21,7 @@ use App\Http\Controllers\HomeController;
 // Ecriture conventionnel avec controller
 
 Route::get('home', [HomeController::class, "Home"])->name('Home');
-Route::get('ecole', [EcoleController::class, "Ecole"])->name('Ecole');
+Route::get('apropos', [AproposController::class, "Apropos"])->name('Apropos');
 Route::get('products', [ProductsController::class, "Products"])->name('Boutique');
 Route::get('evenement', [EvenementController::class, "Evenement"])->name('Evenement');
 // Route::get('',[ProductsController::class,"Products"])->name('Boutique');
