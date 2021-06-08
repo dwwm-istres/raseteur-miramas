@@ -42,7 +42,6 @@
                           </a>
                           <div class="dropdown-menu" aria-labelledby="ecole">
                             <a class="dropdown-item" href="{{route('Apropos')}}">Qu'es ce que la course camarguaise?</a>
-                            <a class="dropdown-item" href="#{{route('Evenement')}}">Evenement</a>
                           </div>
                         </li>
                         <!-- <li class="nav-item">
