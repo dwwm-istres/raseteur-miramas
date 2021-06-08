@@ -1,0 +1,110 @@
+  <div class="container-fluid pt-5 pb-5">
+
+      <div class="row align-items-center">
+        <p class="text1 col-6">Les Courses Camarguaises
+          Dans les arènes du Languedoc et de Provence, l’après-midi, la course débute par la capelado : les raséteurs,
+          hommes vêtus de blanc, défilent sur la piste et saluent la présidence.
+          La course se compose de 6 taureaux qui courent chacun 15 minutes chacun. Après le troisième taureau, 15 minutes
+          d’entracte.
+          Dans les courses camarguaises ce sont les taureaux les Stars. Un vrai culte existe.
+          Le graal de la course camarguaise c'est LE TROPHEE DES AS !
+        </p>
+        <!-- <div class="row align-items-center"></div> -->
+        <div class="col-6">
+          <a target="_blank" href="../img/capelado.jpg">
+            <img src="../img/capelado.jpg" alt="" class="w-100 bordure">
+          </a>
+        </div>
+      </div>
+
+      
+     
+      
+      <div class="row align-items-center">
+        <div class="col-6">
+          <a target="_blank" href="../img/logotext.jpg">
+            <img src="../img/logotext.jpg" class="w-100 bordure" alt="">
+          </a>
+        </div>
+      <p class="text2 col-6">Les courses camarguaises opposent dans un affrontement spectaculaire les raseteurs à des
+        taureaux de Camargue. Il s'agit pour les raseteurs, à l’aide d’un crochet en métal, d'attraper les attributs :
+        (cocarde, glands et ficelles accrochés aux cornes du taureau). Pour y parvenir, les raseteurs disposent
+        seulement de leur courage, de leur vitesse et de leur agilité.
+
+        Le tourneur, un ancien raseteur, attire l'attention du taureau, par des gestes et par la voix, pour bien le
+        placer et préparer une course favorable au raseteur.
+        Le raseteur démarre sa course et déclenche la charge du taureau.
+
+        Au moment du "raset" (lorsque le taureau et le raseteur se croisent), à l'aide de son crochet, le raseteur
+        essaie d'enlever un attribut. La cocarde d'abord,puis les glands et enfin la 1ère et 2eme ficelle.
+        Dégagement du raseteur vers la barrière. Le bon cocardier le poursuit jusqu'aux planches.
+        C'est "Le coup de barrière", salué par l'air du toréador de l'opéra Carmen de Bizet.</p>
+      </div>
+        
+      <div class="row align-items-center">
+          <p class="text1 col-6">Une manade (prov. manado) est un troupeau libre de taureaux, de vaches ou de chevaux
+            conduit par un gardian, notamment en Camargue. Elles constituent des lieux d'élevage extensif de taureaux et
+            de chevaux de Camargue pour la course camarguaise, les fêtes taurines, l'équitation et la commercialisation
+            de leur viande.
+          </p>
+          <div class="col-6">
+          <a target="_blank" href="../img/namades.jpg">
+          <img src="../img/namades.jpg" class="w-100 bordure">
+            </a></div>
+        </div>
+        
+    </div>
+    </div>
+  </div>
+
+  :::://///
+
+  .titre{
+  text-align: center;
+  }
+.container-fluid{
+    background-color: rgba(197, 235, 238, 0.466);
+}
+/* .capelado{ */
+    /* width: 50%; */
+    /* border-radius: 20%; */
+    
+.image2{
+    width: 50%;
+    border-radius: 20%;
+}
+ .text2{
+    float: right;
+}
+.text1{
+    color: rgb(8, 7, 12);
+    
+}
+* {
+  box-sizing: border-box;
+}
+
+.capelado {
+  padding: 50px;
+  /* border-radius: 10%;// */
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.capelado:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  position: relative;z-index: 100;
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.capelado {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+}
+
+.bordure {
+  border-radius: 10%;
+}
