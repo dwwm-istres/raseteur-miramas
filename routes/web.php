@@ -20,10 +20,19 @@ use App\Http\Controllers\Ecole_raseteur\AproposController;
 
 // Ecriture conventionnel avec controller
 
+<<<<<<< Updated upstream
 Route::get('home', [HomeController::class, "Home"])->name('Home');
 Route::get('apropos', [AproposController::class, "Apropos"])->name('Apropos');
 Route::get('products', [ProductsController::class, "Products"])->name('Boutique');
 Route::get('evenement', [EvenementController::class, "Evenement"])->name('Evenement');
+=======
+Route::get('/',[HomeController::class,"index"])->name('Home');
+Route::get('ecole',[EcoleController::class,"Ecole"])->name('Ecole');
+Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
+Route::get('/product/{id}',[ProductsController::class,"Product"])->name('Product');
+Route::get('evenement',[EvenementController::class,"Evenement"])->name('Evenement');
+Route::get('aPropos',[AproposController::class,"Apropos"])->name('Apropos');
+>>>>>>> Stashed changes
 // Route::get('',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
@@ -31,7 +40,16 @@ Route::get('evenement', [EvenementController::class, "Evenement"])->name('Evenem
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
+<<<<<<< Updated upstream
 Route::get('/', function () {
   return view('home')->with('title', "raseteur-miramas");
 });
 Auth::routes();
+=======
+// Route::get('/',function (){
+//     return view('home')->with('title',"raseteur-miramas");
+//  });
+Auth::routes();
+
+
+>>>>>>> Stashed changes

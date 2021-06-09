@@ -7,6 +7,7 @@ la commande php artisan migrate envoie les info au mysql et si ce n'est pas cree
 un seeder c'est une class qui s'occupe de tester les données
 la commande : php artisan db:seed --class=UserSeeder appel une classe nomé à se recharger
 dd = die and dump permet de vider la varible il n'affiche plus la page web mais que les valeurs stocker dans la variable.
+<<<<<<< Updated upstream
 
 */ Comment cree une page avec sa table */ 
 Dans le terminale tapez "php artisan make:view Nom de la vue";
@@ -15,3 +16,7 @@ on fait de même pour le controller: "php artisan make:controller Nom du control
 le controller sert a verifier si tout les paramètre sont ok avant de renvoyer la vue.
 En créant un model: "php artisan make:model Nom du model" laravel crera une table avec le même nom apres ajout des champs il nous reste 
 à remplir nos champs en creant un seeder "si l'interface admin  n'est pas encore fait'
+=======
+Dans database/migration sont cree les tables pour note base de donnée dans cette derniere il y a 2 fonction plic qui sont appler l'une 'Up' est appler lors des migration et 'down ' est quand a elle utiliser pour 
+un retour en arriere 
+>>>>>>> Stashed changes

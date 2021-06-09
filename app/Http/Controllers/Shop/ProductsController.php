@@ -13,4 +13,13 @@ class ProductsController extends Controller
         //  dd($products);
         return view('shop/Products',compact('products')); //->withTitle('nos produits');
     }
+    public function Product(Request $request){
+        $product = Produit::find($request->id);
+        return view('shop/product',compact('product'));
+        // dd($request -> id);
+    }
+    public function Category(){
+
+        return view('shop/category',compact('category'));
+    }
 }

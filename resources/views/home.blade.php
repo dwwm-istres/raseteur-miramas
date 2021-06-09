@@ -35,48 +35,21 @@
       <div class="content-card">
         <h1 class="title-desc">Nos produits recommandés : </h1>
         <div class="row row-cols-1 row-cols-md-3 g-4">
+          @foreach ($products as $product)
+            
           <div class="col">
             <div class="card h-100">
-              <img src="https://fakeimg.pl/80x80/" class="card-img-top" alt="...">
+              <img src="{{asset('img/produits/'.$product->photo_produit)}}" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Produit 1</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, numquam
-                  laudantium! Quidem sequi expedita saepe quaerat provident, repellat perferendis cum similique aliquam
-                  delectus facilis quis voluptate libero officiis magnam fugit.</p>
+                <h5 class="card-title"> {{$product->nom_produit}}</h5>
+                <p class="card-text">{{$product->description_produit}}</p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">50€</small>
+                <button type="button" class="btn text-muted">{{$product->prix_ht}}</button>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="https://fakeimg.pl/80x80/" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Produit 2</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, suscipit ducimus
-                  tempora nihil at consequuntur et? Aspernatur assumenda dignissimos voluptate nobis ullam, eaque velit
-                  doloremque nesciunt quisquam doloribus laboriosam aliquid?</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">30€</small>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="https://fakeimg.pl/80x80/" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Produit 3</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, illo! Praesentium
-                  tenetur nesciunt, tempore beatae eveniet doloremque reiciendis, optio debitis quibusdam ex quo
-                  dignissimos? Earum illum explicabo omnis atque aliquam.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">15€</small>
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
       </div>
 @stop
