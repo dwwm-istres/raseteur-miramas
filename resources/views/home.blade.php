@@ -34,7 +34,7 @@
 
       <div class="content-card">
         <h1 class="title-desc">Nos produits recommandés : </h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-3 ml-2" style="max-width: 1110px;">
           @foreach ($products as $product)
             
           <div class="col">
