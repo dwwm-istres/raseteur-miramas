@@ -10171,11 +10171,6 @@ body {
   border-right: 1px solid #333;
 }
 
-.ligne-droite {
-  grid-area: 1/5/-1/6;
-  border-left: 1px solid #333;
-}
-
 @media screen and (max-width: 1550px) {
   .section-asymetrique {
     grid-template: 200px repeat(26, 100px)/1fr 400px 1fr;
@@ -10242,8 +10237,7 @@ body {
     border-right: 1px solid #333;
   }
 
-  .ligne-milieu,
-.ligne-droite {
+  .ligne-milieu {
     display: none;
   }
 }
@@ -10388,8 +10382,7 @@ body {
     width: 300px;
   }
 
-  .ligne-droite,
-.ligne-gauche {
+  .ligne-gauche {
     display: none;
   }
 }
@@ -10470,4 +10463,8 @@ hr {
 
 .p-4 {
   background-color: #ccbf9e;
+}
+
+#video {
+  max-width: 100%;
 }
