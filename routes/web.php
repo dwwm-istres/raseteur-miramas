@@ -21,9 +21,9 @@ use App\Http\Controllers\Ecole_raseteur\AproposController;
 // Ecriture conventionnel avec controller
 
 Route::get('/',[HomeController::class,"index"])->name('Home');
-Route::get('ecole',[EcoleController::class,"Ecole"])->name('Ecole');
 Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
 Route::get('/product/{id}',[ProductsController::class,"Product"])->name('Product');
+Route::get('/category',[ProductsController::class,"Category"])->name('category');
 Route::get('evenement',[EvenementController::class,"Evenement"])->name('Evenement');
 Route::get('aPropos',[AproposController::class,"Apropos"])->name('Apropos');
 // Route::get('',[ProductsController::class,"Products"])->name('Boutique');
