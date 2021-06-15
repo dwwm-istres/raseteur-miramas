@@ -9,12 +9,14 @@ use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
+    // function qui retoune toutes les donnée 
     public function Products(){
         $products = Produit::all();
         $categories = Category::where('existant',1)->get();
         //  dd($products);
         return view('shop/Products',compact('products','categories')); //->withTitle('nos produits');
     }
+    // fonction qui retourne 1 produit
     public function Product(Request $request){
         $categories = Category::where('existant',1)->get();
         $product = Produit::find($request->id);
@@ -22,10 +24,11 @@ class ProductsController extends Controller
        
         // dd($request -> id);
     }
-    public function Category(){
-        $products = Produit::all();
-        $categories = Category::where('existant',1)->get();
-        // dd($categories);
+    // function qui donne un id aux categories et retourne les produits associer a cette derniere
+    public function Category(Request $request){
+        $products = Produit::where('category_id', $request->id)->get();
+         $categories = Category::where('existant',1)->get();
+        // dd($request);
         return view('shop/category',compact('categories','products'));
 
     }

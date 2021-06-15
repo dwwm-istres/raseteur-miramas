@@ -3,7 +3,7 @@
 <div class="card mb-3 mx-auto" style="max-width: 540px;">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="{{asset('img/produits/'.$product->photo_produit)}}" alt="..." class="img-fluid">
+        <img src="{{asset('img/produits/'.$product->photo_produit)}}" alt="{{$product->nom_produit}}" class="img-fluid">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -16,7 +16,7 @@
                   <button type="button" class="btn btn-light">1</button>
                   <button type="button" class="btn btn-light">-</button>
                 </div>
-                <button type="button" class="btn text-muted">{{$product->prix_ht}}</button>                 
+                <button type="button" class="btn text-muted">{{number_format($product->prix_ht,2)}}</button>                 
                 </div>
             </div>
           </div>

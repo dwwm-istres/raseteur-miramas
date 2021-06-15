@@ -46,9 +46,9 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{route('Apropos')}}">A propos</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="{{route('Classement')}}">Classement</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">je reflechis</a>
         </div>
       </li>
             <!-- <li class="nav-item">
@@ -114,7 +114,16 @@
       </div>
     </nav>
 
-    <div class="container bg-white">
+    <div class="container-fluid bg-white">
+      <form action="" method="get">
+          <div class="form-inline mt-3">
+            <label for="search" class="form-label mr-5 sr-only">Rechercher: </label>
+            <input type="search" name="search" id="search" class="form-control mt-1" placeholder="un article, un evenemnt, une personne etc..">
+           
+          </div>
+ 
+      </form>
+      
       @yield('content')
     </div>
 

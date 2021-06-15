@@ -19,10 +19,7 @@
                 {{$produit->nom_produit}}
               </h5>
             </div>
-            <p>{{$produit->description_produit}} <br>
-              <a href="{{route('category' , ['id'=>$category->id])}}" class="nav-link"><b>{{$produit->category->nom_categories}}</b></a>
-              
-            </p>
+            <p>{{$produit->description_produit}}</p>
           </div>
           <div class="card-footer text-right">
           <a href="{{route('Product',['id'=>$produit->id])}}" class="btn btn-primary">Voir ce produit</a>
@@ -32,4 +29,4 @@
 @endforeach
   </div>
 @endsection
-{{-- vu pour afficher un produit --}}
+{{-- cette page affiche les produits d'une categorie --}}
