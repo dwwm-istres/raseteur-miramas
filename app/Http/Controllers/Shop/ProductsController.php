@@ -11,7 +11,7 @@ class ProductsController extends Controller
 {
     // function qui retoune toutes les donnée 
     public function Products(){
-        $products = Produit::all();
+        $products = Produit::with('category')->get();
         $categories = Category::where('existant',1)->get();
         //  dd($products);
         return view('shop/Products',compact('products','categories')); //->withTitle('nos produits');

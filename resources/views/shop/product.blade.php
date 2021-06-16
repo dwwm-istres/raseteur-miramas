@@ -16,7 +16,9 @@
                   <button type="button" class="btn btn-light">1</button>
                   <button type="button" class="btn btn-light">-</button>
                 </div>
-                <button type="button" class="btn text-muted">{{number_format($product->prix_ht,2)}}</button>                 
+                <button type="button" class="btn text-muted">{{number_format($product->prix_ht,2)}}</button>  
+                
+                <button type="button" class="btn btn-warning mt-3 fixed-right"> Ajouter au panier</button>             
                 </div>
             </div>
           </div>
