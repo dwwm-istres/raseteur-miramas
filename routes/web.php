@@ -6,8 +6,7 @@ use App\Http\Controllers\Evenement\EvenementController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Ecole_raseteur\AproposController;
 use App\Http\Controllers\Ecole_raseteur\ClassementController;
-use App\Http\Controllers\Contact;
-
+use App\Http\Controllers\ContactController\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +28,7 @@ Route::get('/category/{id}',[ProductsController::class,"Category"])->name('categ
 Route::get('evenement',[EvenementController::class,"Evenement"])->name('Evenement');
 Route::get('aPropos',[AproposController::class,"Apropos"])->name('Apropos');
 Route::get('classement',[ClassementController::class,"MakeClassement"])->name('Classement');
-Route::get('contact',[Contact::class,"Contact"])->name('Contact');
+Route::get('contact',[ContactController::class,"Contact"])->name('Contact');
 // Route::get('',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');

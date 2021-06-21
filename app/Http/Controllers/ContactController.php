@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Contact;
+namespace App\Http\Controllers\ContactController;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class Contact extends Controller
+class ContactController extends Controller
 {
     //
     public function Contact()
