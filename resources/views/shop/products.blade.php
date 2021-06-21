@@ -1,7 +1,7 @@
 @Extends('layouts\app')
 @section('content')
 <nav class="navbar navbar-light bg-light mb-5">
-  @foreach ($categories as $category )
+  @foreach ($category as $categories)
       <li class="nav-item">
           <a href="{{route('category' , ['id'=>$category->id])}}" class="nav-link">{{$category->nom_categories}}</a>
       </li>

@@ -71,7 +71,7 @@
               <a class="nav-link" href="#">Nos partenaires</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Contactez-Nous</a>
+              <a class="nav-link" href="{{route('Contact')}}">Contactez-Nous</a>
             </li>
           </ul>
 
