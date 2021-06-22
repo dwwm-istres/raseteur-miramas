@@ -60,7 +60,7 @@
 <!-- Script -->
 
 <script src="carousel.js"></script>
-<scrip src="assets/bundle.js"></scrip>
+<script src="assets/bundle.js"></script>
 
 
 @endsection

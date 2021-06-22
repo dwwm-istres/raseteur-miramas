@@ -13,7 +13,8 @@ class ProductsController extends Controller
     public function Products(){
         $products = Produit::with('category')->get();
         $categories = Category::where('existant',1)->get();
-        //  dd($products);
+        // dd($categories);
+        // dd($products);
         return view('shop/Products',compact('products','categories')); //->withTitle('nos produits');
     }
     // fonction qui retourne 1 produit

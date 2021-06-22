@@ -18,7 +18,7 @@ class CreateCategoriesTable extends Migration
             $table->timestamps();
             $table->string('nom_categories');
             $table->boolean('existant')->default(0);
-            $table->foreignId('categories_produit');
+            $table->foreignId('categories_produit') ;
         });
     }
 
