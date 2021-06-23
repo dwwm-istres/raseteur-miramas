@@ -6,7 +6,7 @@ use App\Http\Controllers\Evenement\EvenementController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Ecole_raseteur\AproposController;
 use App\Http\Controllers\Ecole_raseteur\ClassementController;
-use App\Http\Controllers\ContactController\ContactController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------

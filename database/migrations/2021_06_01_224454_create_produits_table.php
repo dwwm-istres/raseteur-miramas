@@ -20,6 +20,7 @@ class CreateProduitsTable extends Migration
             $table->text("description_produit");
             $table->float("prix_ht");
             $table->string("photo_produit");
+            
         });
     }
     // timestamps sert a dire quand l'article a ete cree 

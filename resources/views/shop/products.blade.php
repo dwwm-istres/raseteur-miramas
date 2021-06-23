@@ -20,9 +20,9 @@
               </h5>
             </div>
             <p>{{$produit->description_produit}} <br>
-           
-              <a href="{{route('category' , ['id'=>$produit->category_id])}}" class="nav-link"><b>{{$produit->category->nom_categories}}</b></a>
-              
+              @if ($produit->categories->first()!== null)
+              <a href="{{route('category' , ['id'=>$produit->categories->first()->id])}}" class="nav-link"><b>{{$produit->categories->first()->nom_categories}}</b></a>
+              @endif
             </p>
           </div>
           <div class="card-footer text-right">

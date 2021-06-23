@@ -9,9 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 class Produit extends Model
 {
     use HasFactory;
-    public function category() {
+    public function categories() {
 
-        return $this->belongsTo(Category::class);
+        return $this->belongsToMany(Category::class);
         // return $this->belongsTo("App\Category");
 
     }
