@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models\post;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Article extends Model
+class Donnateur extends Model
 {
     use HasFactory;
 }

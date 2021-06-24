@@ -38,9 +38,9 @@
           @foreach ($products as $product)
             
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 ">
               <img src="{{asset('img/produits/'.$product->photo_produit)}}" class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body ">
                 <h5 class="card-title"> {{$product->nom_produit}}</h5>
                 <p class="card-text">{{$product->description_produit}}</p>
               </div>

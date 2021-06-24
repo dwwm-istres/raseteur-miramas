@@ -45,7 +45,7 @@
           Ecole raseteur
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{route('activite')}}">Nos activités</a>
+          {{-- <a class="dropdown-item" href="{{route('activite')}}">Nos activités</a> --}}
           <a class="dropdown-item" href="{{route('Apropos')}}">A propos</a>
           <a class="dropdown-item" href="{{route('Classement')}}">Classement</a>
         </div>

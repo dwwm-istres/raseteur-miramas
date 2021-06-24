@@ -7,6 +7,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Ecole_raseteur\AproposController;
 use App\Http\Controllers\Ecole_raseteur\ClassementController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controller\PostController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +43,12 @@ Route::get('contact',[ContactController::class,"Contact"])->name('Contact');
 //  });
 Auth::routes();
 
+Route::resource('posts', 'PostController')->only('index','show');
 
+Route::get('/home', [PostController::class, 'index'])->name('home');
+Route::get('posts/create', [PostController::class, 'create']);
+Route::post('posts',[PostController::class, 'store']);
+Route::get('posts/{posts}/edit',[PostController::class, 'edit']);
+Route::get('posts/{posts}',[PostController::class, 'show']);
+Route::put('posts/{posts}', [PostController::class, 'update']);
+Route::delete('posts/{posts}', [PostController::class, 'destroy']);
