@@ -21,9 +21,9 @@
 </head>
 
 <body>
-  <div id="app">
+  <div class="container">
+    <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container">
         <!-- <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a> -->
@@ -45,7 +45,6 @@
           Ecole raseteur
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{route('activite')}}">Nos activités</a>
           <a class="dropdown-item" href="{{route('Apropos')}}">A propos</a>
           <a class="dropdown-item" href="{{route('Classement')}}">Classement</a>
         </div>
@@ -67,12 +66,20 @@
               <a class="nav-link" href="#">Faire un don</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nos partenaires</a>
+              <a class="nav-link" href="{{route('Partner')}}">Nos partenaires</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{route('Contact')}}">Contactez-Nous</a>
             </li>
           </ul>
+          <form action="" method="get">
+            <div class="form-inline">
+              <label for="search" class="form-label mr-5 sr-only">Rechercher: </label>
+              <input type="search" name="search" id="search" class="form-control mt-1" placeholder="un article, un evenemnt, une personne etc..">
+             
+            </div>
+   
+        </form>
 
           <!-- Right Side Of Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -98,7 +105,7 @@
 
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                  document.getElementById('logout-form').submit();">
                   {{ __('Logout') }}
                 </a>
 
@@ -109,19 +116,11 @@
             </li>
             @endguest
           </ul>
-        </div>
       </div>
     </nav>
 
     <div class="container-fluid bg-white">
-      <form action="" method="get">
-          <div class="form-inline mt-3">
-            <label for="search" class="form-label mr-5 sr-only">Rechercher: </label>
-            <input type="search" name="search" id="search" class="form-control mt-1" placeholder="un article, un evenemnt, une personne etc..">
-           
-          </div>
- 
-      </form>
+
       
       @yield('content')
     </div>
@@ -178,7 +177,8 @@
       <!-- Copyright -->
     </footer>
 
-  </div>
+    </div>
+</div>
   <script src="{{asset('js/carousel.js')}}"></script>
   <script src="{{asset('js/bundle.js')}}"></script>
 </body>

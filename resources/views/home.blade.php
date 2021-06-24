@@ -1,17 +1,7 @@
 @Extends('layouts\app')
 @section('content')
 
- <!-- <div class="carousel">
-        <button class="carousel__button previous" id="previous"></button>
-        <div class="carousel__images">
-          <img src="../img/media-1.jpg" alt="">
-          <img src="../img/media-2.jpg" alt="">
-          <img src="../img/media-3.jpg" alt="">
-          <img src="../img/media-4.jpg" alt="">
-          <img src="../img/media-5.jpg" alt="">
-        </div>
-        <button class="carousel__button next" id="next">></button>
-      </div> -->
+
 
 
       <div class="desc-home">
@@ -30,9 +20,9 @@
           C'est "Le coup de barrière", salué par l'air du toréador de l'opéra Carmen de Bizet.</p>
       </div>
 
-      <hr>
+  
 
-      <div class="content-card">
+      <div class="content-card shadow">
         <h1 class="title-desc">Nos produits recommandés : </h1>
         <div class="row row-cols-1 row-cols-md-3 ml-2" style="max-width: 1110px;">
           @foreach ($products as $product)
@@ -52,4 +42,6 @@
           @endforeach
         </div>
       </div>
+
+      
 @stop
