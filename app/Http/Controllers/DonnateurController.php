@@ -15,7 +15,7 @@ class DonnateurController extends Controller
     public function index()
     {
         $dons = Donnateur::all();
-        return view('donnateur.don',compact('dons'));
+        return view('donnateur.index',compact('dons'));
         //
     }
 

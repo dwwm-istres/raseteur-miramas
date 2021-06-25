@@ -7,8 +7,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Ecole_raseteur\AproposController;
 use App\Http\Controllers\Ecole_raseteur\ClassementController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\Partner;
 use App\Http\Controller\PostController;
+use App\Http\Controllers\Partner;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -32,7 +32,6 @@ Route::get('evenement',[EvenementController::class,"Evenement"])->name('Evenemen
 Route::get('aPropos',[AproposController::class,"Apropos"])->name('Apropos');
 Route::get('classement',[ClassementController::class,"MakeClassement"])->name('Classement');
 Route::get('contact',[ContactController::class,"Contact"])->name('Contact');
-Route::get('partner',[Partner::class,"Partner"])->name('Partner');
 // Route::get('',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
@@ -45,9 +44,8 @@ Route::get('partner',[Partner::class,"Partner"])->name('Partner');
 //  });
 Auth::routes();
 
-Route::resource('posts', 'PostController')->only('index','show');
+Route::resource('donnateurs', 'DonnateurController')->only('index','create');
 
-Route::get('/home', [PostController::class, 'index'])->name('home');
 Route::get('posts/create', [PostController::class, 'create']);
 Route::post('posts',[PostController::class, 'store']);
 Route::get('posts/{posts}/edit',[PostController::class, 'edit']);
