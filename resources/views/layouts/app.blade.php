@@ -137,7 +137,7 @@
               <!--Grid column-->
               <div class="col-auto">
                 <p class="pt-2">
-                  <strong>S'inscrire à notre Newsletter</strong>
+                  <strong style="font-size: 20px;">S'inscrire à notre Newsletter</strong>
                 </p>
               </div>
               <!--Grid column-->
@@ -146,8 +146,9 @@
               <div class="col-md-5 col-12">
                 <!-- Email input -->
                 <div class="form-outline form-dark mb-4">
-                  <label class="form-label" for="email_NL mt-2">addresse E-mail</label>
-                  <input type="email" id="email_NL" class="form-control" />
+                  <label class="form-label" for="email_NL mt-2" style="font-size: 16px;">addresse E-mail</label>
+                  <br>
+                  <input class="input__footer" type="email" id="email_NL" class="form-control"/>
 
                 </div>
               </div>
@@ -156,7 +157,7 @@
               <!--Grid column-->
               <div class="col-auto">
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-outline-primary mt-4">
+                <button type="submit" class="btn btn-outline-primary mt-4" style="font-weight: bold;">
                   Envoyer
                 </button>
               </div>
