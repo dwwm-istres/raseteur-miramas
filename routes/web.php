@@ -25,14 +25,13 @@ use Illuminate\Support\Facades\Auth;
 // Ecriture conventionnel avec controller
 
 Route::get('/',[HomeController::class,"index"])->name('Home');
-Route::get('/products',[ProductsController::class,"Products"])->name('Boutique');
+Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
 Route::get('/product/{id}',[ProductsController::class,"Product"])->name('Product');
 Route::get('/category/{id}',[ProductsController::class,"Category"])->name('category');
-Route::get('/evenement',[EvenementController::class,"Evenement"])->name('Evenement');
-Route::get('/aPropos',[AproposController::class,"Apropos"])->name('Apropos');
-Route::get('/classement',[ClassementController::class,"MakeClassement"])->name('Classement');
-Route::get('/contact',[ContactController::class,"Contact"])->name('Contact');
-Route::get('/partenaire',[ParterController::class,"Partner"])->name('Partner');
+Route::get('evenement',[EvenementController::class,"Evenement"])->name('Evenement');
+Route::get('aPropos',[AproposController::class,"Apropos"])->name('Apropos');
+Route::get('classement',[ClassementController::class,"MakeClassement"])->name('Classement');
+Route::get('contact',[ContactController::class,"Contact"])->name('Contact');
 // Route::get('',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
 // Route::get('products',[ProductsController::class,"Products"])->name('Boutique');
